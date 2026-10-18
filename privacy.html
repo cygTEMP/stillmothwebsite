@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy | Stillmoth</title><meta name="description" content="How Stillmoth apps handle your information."><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Sora:wght@300;400&display=swap"><style>
+/* Layout: one narrow lamp-lit column; the moth sits in a pool of gold light at the top, text below. Dark-first (night navy), sand in light mode. */
+:root{
+  --night:#161B2E; --night-2:#1E2540; --sand:#EDE6D8; --sand-dim:#B9AE9A; --lamp:#F2B84B; --line:rgba(237,230,216,.14);
+  --bg:var(--night); --surface:var(--night-2); --fg:var(--sand); --muted:var(--sand-dim); --accent:var(--lamp); --glow:rgba(242,184,75,.16);
+  --display:"Sora",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --bg:#F3EEE3; --surface:#E9E1D1; --fg:#161B2E; --muted:#5A5446; --accent:#9A6410; --line:rgba(22,27,46,.14); --glow:rgba(224,162,58,.22); color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#F3EEE3; --surface:#E9E1D1; --fg:#161B2E; --muted:#5A5446; --accent:#9A6410; --line:rgba(22,27,46,.14); --glow:rgba(224,162,58,.22); color-scheme:light}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.125rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:40rem;margin:0 auto;padding-inline:20px;padding-block:0 3rem;display:flex;flex-direction:column;min-height:100vh}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.25rem;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:.6rem;color:var(--fg);text-decoration:none;font-family:var(--display);font-weight:300;font-size:1.15rem;letter-spacing:.01em}
+.mark{display:block;color:var(--fg)}
+.mark-sm{width:28px;height:28px}
+nav.links{display:flex;gap:1.1rem;font-family:var(--display);font-size:.85rem}
+nav.links a{color:var(--muted);text-decoration:none}
+nav.links a[aria-current="page"],nav.links a:hover{color:var(--fg)}
+main{flex:1}
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:1rem;padding-block:3.5rem 1.5rem}
+.lamp{position:relative;display:grid;place-items:center;width:200px;height:200px;max-width:100%}
+.lamp::before{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,var(--glow) 0%,transparent 68%)}
+.lamp .mark{position:relative;width:132px;height:132px}
+@media (prefers-reduced-motion: no-preference){.lamp .mark{animation:hover 7s ease-in-out infinite}}
+@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.2;text-wrap:balance;margin:0}
+.hero h1{font-weight:300;font-size:clamp(2.4rem,8vw,3.4rem);letter-spacing:-.01em}
+.hero p{margin:0;max-width:30rem;color:var(--muted)}
+.eyebrow{font-family:var(--display);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.app{display:grid;grid-template-columns:auto 1fr;gap:1.25rem;align-items:center;padding:1.5rem;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.app-icon{width:64px;height:64px;border-radius:15px;background:linear-gradient(180deg,#232B4A 0%,#161B2E 55%,#3A2E1C 100%);display:grid;place-items:center}
+.app-icon span{width:22px;height:22px;border-radius:50%;background:#F2B84B;box-shadow:0 0 18px 4px rgba(242,184,75,.45);transform:translateY(9px)}
+.app div{min-width:0}
+.app h2{font-size:1.25rem}
+.app p{margin:.25rem 0 0;color:var(--muted);font-size:1rem}
+.apps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.apps li{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.5rem;padding-block:.9rem;border-bottom:1px solid var(--line);font-family:var(--display);font-size:1.05rem}
+.status{display:inline-block;font-family:var(--display);font-size:.78rem;letter-spacing:.02em;color:var(--accent);border:1px solid currentColor;border-radius:99px;padding:.15rem .6rem}
+section.block{padding-block:2.5rem 0;display:flex;flex-direction:column;gap:.75rem}
+section.block h2{font-size:1.1rem}
+section.block p{margin:0}
+.doc{padding-block:3rem 0;display:flex;flex-direction:column;gap:1.5rem}
+.doc h1{font-size:clamp(1.9rem,6vw,2.4rem);font-weight:300}
+.doc .meta{font-family:var(--display);font-size:.8rem;color:var(--muted);margin:-.75rem 0 0}
+.doc h2{font-size:1.15rem;margin-top:.5rem}
+.doc p,.doc ul{margin:0}
+.doc ul{padding-left:1.2rem;display:flex;flex-direction:column;gap:.6rem}
+.doc strong{font-weight:500}
+.addr{font-family:var(--display);font-size:1rem;color:var(--fg);user-select:all}
+details{border-top:1px solid var(--line);padding-block:1rem}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-family:var(--display);font-size:1rem}
+details p{margin:.6rem 0 0;color:var(--muted)}
+footer.bottom{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:.75rem;font-family:var(--display);font-size:.8rem;color:var(--muted)}
+footer.bottom nav{display:flex;gap:1rem}
+footer.bottom a{color:var(--muted)}
+</style></head>
+<body><div class="wrap"><header class="top"><a class="brand" href="index.html"><svg class="mark mark-sm" viewBox="0 0 120 120" role="img" aria-label="Stillmoth moth mark">
+<g fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+<path d="M57 48 C44 38 24 28 12 28 C10 40 14 56 22 66 C34 66 48 64 57 62 Z"/>
+<path d="M63 48 C76 38 96 28 108 28 C110 40 106 56 98 66 C86 66 72 64 63 62 Z"/>
+<path d="M57 63 C46 66 32 70 26 78 C24 90 34 100 44 98 C52 94 56 84 58 74 Z"/>
+<path d="M63 63 C74 66 88 70 94 78 C96 90 86 100 76 98 C68 94 64 84 62 74 Z"/>
+<path d="M58.6 44.5 Q56 32 46 21 M54.76 33.55 L52.37 37.48 M51.94 28.65 L50.17 32.46 M51.94 28.65 L56.14 28.58 M48.65 24.11 L47.66 26.94 M48.65 24.11 L51.63 23.76" stroke-width="3.6"/>
+<path transform="matrix(-1 0 0 1 120 0)" d="M58.6 44.5 Q56 32 46 21 M54.76 33.55 L52.37 37.48 M51.94 28.65 L50.17 32.46 M51.94 28.65 L56.14 28.58 M48.65 24.11 L47.66 26.94 M48.65 24.11 L51.63 23.76" stroke-width="3.6"/>
+</g>
+<path fill="currentColor" d="M60 44 C64 44 65.6 48.5 65.2 54 C64.8 61 64 73 62.3 81 C61.5 84.6 58.5 84.6 57.7 81 C56 73 55.2 61 54.8 54 C54.4 48.5 56 44 60 44 Z"/>
+</svg><span>stillmoth</span></a>
+<nav class="links" aria-label="Site"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy</a></nav></header><main class="doc">
+<h1>Privacy policy</h1>
+<p class="meta">Effective October 15, 2026</p>
+<p>Stillmoth apps do not collect personal information. We have no servers that receive your data.</p>
+<ul>
+<li><strong>No accounts, ads, analytics or tracking.</strong> Your settings are stored on your device and are deleted with the app, unless your phone&rsquo;s own backup keeps a copy.</li>
+<li><strong>Tips</strong> are processed by Apple or Google. We never see your name or payment details.</li>
+<li><strong>Permissions</strong>, such as notifications, are used only on your device to make the app work.</li>
+<li><strong>Email</strong> you send us is used only to reply to you.</li>
+<li><strong>This website</strong> uses no cookies or analytics. Our host may keep standard server logs, and fonts load from Google Fonts.</li>
+</ul>
+<h2>Sunrise Wake-Up</h2>
+<ul>
+<li><strong>Location.</strong> If you allow it, the app reads your phone&rsquo;s location once to work out sunrise times for where you are. You can type a city instead. Place names come from a list built into the app, so your location is not sent anywhere to look up a name.</li>
+<li><strong>Weather.</strong> To show the cloud forecast, the app sends your location, rounded to about 1 km, to a public weather service: MET Norway (the default) or the US National Weather Service, whichever you choose. Like any website, the service can see your device&rsquo;s IP address. Nothing else is sent, and no account or name is involved. You can turn the forecast off in Settings.</li>
+<li><strong>Backup.</strong> On Android, your settings and saved location can be included in your phone&rsquo;s backup to your Google account, so they come back if you reinstall the app. You control this in your phone&rsquo;s backup settings.</li>
+</ul>
+<p>If this changes, this page will be updated first.</p>
+<p>Stillmoth LLC &middot; <span class="addr">contact@stillmoth.com</span></p>
+</main><footer class="bottom"><span>&copy; 2026 Stillmoth LLC</span></footer></div></body></html>
