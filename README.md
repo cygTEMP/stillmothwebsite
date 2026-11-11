@@ -15,6 +15,6 @@ Plain HTML with no build step. Netlify publishes the repository root, so every p
 
 1. Copy `apps/fijit/` to `apps/<new-app>/` and replace the icon, text and privacy details.
 2. Add a row for it at the top of the apps list in `index.html`.
-3. Add a link to its privacy page under "Each app" in `privacy.html`.
+3. Add a link to its privacy page under "Apps" in `privacy.html`.
 
 The security headers in `netlify.toml` only allow the site's own files and Google Fonts, so anything loaded from another site must be added there too.
