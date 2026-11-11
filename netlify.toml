@@ -11,3 +11,14 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+
+# Natural Wake Up was renamed Eastlight on 2026-11-11; keep old links working.
+[[redirects]]
+  from = "/apps/natural-wake-up/*"
+  to = "/apps/eastlight/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/apps/natural-wake-up"
+  to = "/apps/eastlight/"
+  status = 301
